@@ -1,0 +1,1 @@
+[CSS만으로 구현하는 Scroll-driven Animation 가이드](https://news.hada.io/topic?id=21677)를 보고 `animation-timeline`과 `animation-range`를 사용해보았습니다.

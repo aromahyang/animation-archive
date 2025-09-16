@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+main {
+  position: relative;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.section img {
+  animation: slideIn;
+  animation-timeline: view(); /* new feature */
+  animation-range: 0% 50%; /* new feature */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.section-1 {
+  background-color: pink;
+}
+
+.section-2 {
+  background-color: skyblue;
+}
+
+.section-3 {
+  background-color: green;
+}
+
+.section-4 {
+  background-color: yellow;
+}
+
+.section-5 {
+  background-color: purple;
+}
