@@ -1,0 +1,67 @@
+/* common */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 8px 0;
+  padding: 8px;
+  background: skyblue;
+  border-radius: 4px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.fixed-li {
+  width: 160px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 16px 0;
+  background-color: black;
+}
+
+.follower {
+  margin-left: 8px;
+  font-size: 2rem;
+}
+
+/* animation with fixed width */
+.fixed-li:first-child {
+  anchor-name: --hovered; /* 첫 번째 요소에 anchor-name을 지정하지 않으면 원하는 애니메이션이 적용되지 않음 */
+}
+
+.fixed-li:hover {
+  anchor-name: --hovered;
+}
+
+.follower1 {
+  position: fixed;
+  position-anchor: --hovered;
+  top: calc(anchor(center) - 1rem);
+  left: anchor(right);
+  transition: top 0.5s ease;
+}
+
+/* animation with randomize width */
+.randomize-width-li:first-child {
+  anchor-name: --hovered2;
+}
+
+.randomize-width-li:hover {
+  anchor-name: --hovered2;
+}
+
+.follower2 {
+  position: fixed;
+  position-anchor: --hovered2;
+  top: calc(anchor(center) - 1rem);
+  left: anchor(right);
+  transition: top 0.5s ease, left 0.5s ease;
+}
