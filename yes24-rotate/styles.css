@@ -14,11 +14,11 @@
   height: auto;
   transition: transform 0.5s;
   transform-style: preserve-3d;
+  cursor: url(https://image.yes24.com/sysimage/renew/detail/ico/ico_flip.svg),
+    auto;
 }
 
 .container:hover {
-  cursor: url(https://image.yes24.com/sysimage/renew/detail/ico/ico_flip.svg),
-    auto;
   transform: rotate3d(0, 1, 0, 40deg);
 }
 
