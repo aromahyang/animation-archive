@@ -1,0 +1,106 @@
+.wrapper {
+  width: fit-content;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  user-select: none;
+  perspective: 1800px;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.container:hover {
+  cursor: url(https://image.yes24.com/sysimage/renew/detail/ico/ico_flip.svg),
+    auto;
+  transform: rotate3d(0, 1, 0, 40deg);
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.thumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-right: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+.thumbnail::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+.thumbnail .imgBdr {
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+.thumbnail .imgBdr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-left: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail .imgBdr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.imgLeft {
+  position: absolute;
+  top: 0;
+  left: -37px;
+  bottom: 0;
+  width: 75px;
+  max-width: 75px;
+  height: auto;
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(-37px, 0, 0);
+  z-index: 2;
+  background-color: #fff;
+}
+
+.imgLeft img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+
+.imgLeft::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.075);
+}
