@@ -24,8 +24,24 @@
             alt="imgLeft"
           />
         </div>
-        <div class="imgBack"></div>
+        <div class="imgBack">
+          <img
+            src="https://image.yes24.com/goods/92742567/BACK/XL"
+            alt="imgBack"
+          />
+        </div>
       </div>
     </div>
   </body>
+  <script>
+    const container = document.querySelector('.container');
+    container?.addEventListener('click', () => {
+      const isFlipped = container.classList.toggle('flip');
+      if (isFlipped) {
+        container.style.transform = 'rotate3d(0, 1, 0, 180deg)';
+      } else {
+        container.style = '';
+      }
+    });
+  </script>
 </html>

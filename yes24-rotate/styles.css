@@ -14,7 +14,6 @@
   height: auto;
   transition: transform 0.5s;
   transform-style: preserve-3d;
-  z-index: 2;
 }
 
 .container:hover {
@@ -27,7 +26,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  z-index: 2;
   background-color: #fff;
 }
 
@@ -52,7 +50,6 @@
 .thumbnail .imgBdr {
   display: block;
   width: 100%;
-  z-index: 2;
 }
 
 .thumbnail .imgBdr::before {
@@ -76,7 +73,6 @@
 .thumbnail img {
   width: 100%;
   height: auto;
-  z-index: 2;
 }
 
 .imgLeft {
@@ -88,14 +84,12 @@
   max-width: 75px;
   height: auto;
   transform: rotate3d(0, 1, 0, -90deg) translate3d(-37px, 0, 0);
-  z-index: 2;
   background-color: #fff;
 }
 
 .imgLeft img {
   width: 100%;
   height: auto;
-  z-index: 2;
 }
 
 .imgLeft::after {
@@ -103,4 +97,16 @@
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.075);
+}
+
+.imgBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.imgBack img {
+  width: 100%;
 }
