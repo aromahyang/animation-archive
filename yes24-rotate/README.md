@@ -13,3 +13,7 @@
 - `transform-style: preserve-3d`
 
 자식 요소의 3D 변환 시 3D 변환 위치를 유지해주어 입체적으로 보이게 한다.
+
+### 결과
+
+![결과](./demo.gif)
